@@ -57,7 +57,7 @@ public class guessThenumber {
         System.out.println("Round " + no_of_Round + " Finished!!");
         System.out.print("Do you want to play again(Y/N): ");
         String choice = sc.next();
-        if (choice.toUpperCase().equals("Y")){
+        if (choice.equalsIgnoreCase("Y")){
             Game();
         }
         else{
