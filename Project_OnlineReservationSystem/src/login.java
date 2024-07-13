@@ -13,7 +13,7 @@ public class login extends JFrame implements ActionListener {
     JButton loginButton;
     JTextField usernameField;
     JPasswordField passwordField;
-    private Jdbc connector;
+    private final Jdbc connector;
 
     public login(){
 

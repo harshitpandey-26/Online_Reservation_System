@@ -9,7 +9,7 @@ import java.sql.SQLException;
 public class cancelTicket implements ActionListener {
 
     JButton canButton;
-    private Jdbc connector;
+    private final Jdbc connector;
     JTextField canTextfield;
 
     public cancelTicket() {

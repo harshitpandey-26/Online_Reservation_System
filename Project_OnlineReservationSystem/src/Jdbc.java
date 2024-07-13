@@ -12,7 +12,7 @@ public class Jdbc {
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
         }catch(ClassNotFoundException e){
-            e.printStackTrace();
+            e.getMessage();
         }
         try{
             Connection con = DriverManager.getConnection(url,username,password);

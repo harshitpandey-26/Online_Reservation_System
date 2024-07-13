@@ -1,5 +1,3 @@
-import jdk.swing.interop.SwingInterOpUtils;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -17,18 +15,13 @@ public class bookTicket implements ActionListener {
     JFrame frame;
     JLabel pnrLabel;
     int pnrNumber;
-
     JComboBox box;
-
     JTextField namTextfield;
     JTextField trainTextfield;
     JTextField dateTextfield;
     JTextField startTextfield;
     JTextField destTextfield;
-
-    private Jdbc connector;
-    private static bookTicket instance;
-    private String[][] data;
+    private final Jdbc connector;
     public bookTicket(){
         frame = new JFrame();
 
